@@ -8,5 +8,5 @@ COPY . ${SOURCES}
 RUN cd ${SOURCES} && CGO_ENABLED=0 go build 
 
 WORKDIR ${SOURCES}
-CMD ${SOURCES}cloud-go
+CMD ${SOURCES}server
 EXPOSE 8080
